@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Test animation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="anim.css" rel="stylesheet" />
+        <script type="text/javascript" src="anim_clock.js"></script>
+        <script type="text/javascript" src="anim_balle.js"></script>
+    </head>
+    <body>
+        <h1>Javascript : Animation de base</h1>
+        <h2>Horloge</h2>
+        <div id="clock">
+	    <span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>
+	</div>
+        <div id="bclock">
+            <input type="button" onclick="clockStart();" value="Start" />
+            <input type="button" onclick="clockStop();" value="Stop" />
+        </div>
+        <h2>Animation de base</h2>
+        <div id="deplace">
+            <img id="img1" src="img/balle.jpg" alt="personnage animé" />
+        </div>
+        <div id="bdeplace">
+            <input type="button" class="bouton" onclick="balle_gauche();" value=" revenir " />
+            <input type="button" class="bouton" onclick="balle_stop();" value="Stop" />
+            <input type="button" class="bouton" onclick="balle_rotation();" value="Rotation" />
+            <input type="button" class="bouton" onclick="balle_droite();" value=" go " />
+        </div>
+    </body>
+</html>
